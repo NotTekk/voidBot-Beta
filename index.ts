@@ -13,14 +13,6 @@ client.on('ready', () => {
     console.log('The Bot is ready')
 })
 
-client.on('messageCreate', (message) => {
-if (message.content === 'ping') {
-        message.reply({
-            content: 'pong'
-        })
-    }
-})
-
 try {
     client.login(process.env.TOKEN)
 } catch (error) {
